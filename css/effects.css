@@ -1,0 +1,287 @@
+.bg_plus{
+
+    width:100%;
+    
+    height:100%;
+    
+    }
+    
+    .bg_plus span{
+    
+    width:80px;
+    
+    height:80px;
+    
+    background:#fff;
+    
+    position:absolute;
+    
+    
+    }
+    
+    .bg_plus span:nth-child(3n+1)
+    
+    {
+    
+    background:transparent;
+    
+    border:5px solid  #fff;
+    
+    }
+    
+    .bg_plus span:nth-child(1)
+    
+    {
+    
+    top:50%;
+    
+    left:20%;
+    
+    animation:animate 10s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(2)
+    
+    {
+    
+    top:80%;
+    
+    left:40%;
+    
+    animation:animate 12s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(3)
+    
+    {
+    
+    top:10%;
+    
+    left:40%;
+    
+    animation:animate 15s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(4)
+    
+    {
+    
+    top:50%;
+    
+    left:70%;
+    
+    animation:animate 6s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(5)
+    
+    {
+    
+    top:10%;
+    
+    left:30%;
+    
+    animation:animate 9s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(6)
+    
+    {
+    
+    top:85%;
+    
+    left:75%;
+    
+    animation:animate 8s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(7)
+    
+    {
+    
+    top:80%;
+    
+    left:5%;
+    
+    animation:animate 7s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(8)
+    
+    {
+    
+    top:35%;
+    
+    left:15%;
+    
+    animation:animate 5s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(9)
+    
+    {
+    
+    top:5%;
+    
+    left:5%;
+    
+    animation:animate 14s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(10)
+    
+    {
+    
+    top:25%;
+    
+    left:5%;
+    
+    animation:animate 12s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(11)
+    
+    {
+    
+    top:5%;
+    
+    left:85%;
+    
+    animation:animate 13s linear infinite;
+    
+    }
+    
+    .bg_plus span:nth-child(12)
+    
+    {
+    
+    top:30%;
+    
+    left:80%;
+    
+    animation:animate 11s linear infinite;
+    
+    }
+    .bg_plus span:nth-child(13)
+    
+    {
+    
+    top:20%;
+    
+    left:70%;
+    
+    animation:animate 11s linear infinite;
+    
+    }
+    .bg_plus span:nth-child(14)
+    
+    {
+    
+    top:12%;
+    
+    left:69%;
+    
+    animation:animate 11s linear infinite;
+    
+    }
+    .bg_plus span:nth-child(15)
+    
+    {
+    
+    top:70%;
+    
+    left:60%;
+    
+    animation:animate 11s linear infinite;
+    
+    }
+    .bg_plus span:nth-child(16)
+    
+    {
+    
+    top:90%;
+    
+    left:10%;
+    
+    animation:animate 11s linear infinite;
+    
+    }
+    
+    @keyframes animate{
+    
+    0%
+    
+    {
+    
+    transform:scale(0) translateY(0) rotate(0);
+    
+    opacity:1;
+    
+    }
+    
+    100%
+    
+    {
+    
+    transform:scale(1) translateY(-100px) rotate(360deg);
+    
+    opacity:0;
+    
+    }
+    
+    }
+    
+    
+    @keyframes bg_color{
+    
+    0%
+    
+    {
+    
+    background:#f44336;
+    
+    }
+    
+    25%
+    
+    {
+    
+    background:#03A9F4;
+    
+    }
+    
+    50%
+    
+    {
+    
+    background:#9C27B0;
+    
+    }
+    
+    75%
+    
+    {
+    
+    background:#00FF0a;
+    
+    }
+    
+    100%
+    
+    {
+    
+    background:#f44336;
+    
+    }
+    
+    }

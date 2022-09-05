@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<title>Account login</title>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="navbar my-color sticky-top">
+        <h5 class="my-font"><u>Event Registration System</u><br><p style="font-size: 9px;">Semicolon;</p></h5>
+        <div id="profile">
+           <p id="acrnym" class="dropdown">Aa</p>
+           <p id="name" class="dropdown-toggle" data-toggle="dropdown">agnoteageo</p>
+                <div class="dropdown-menu border-0 trans_1" id="drpm">
+                    <a class="dropdown-item" href="#" id="lgt">Profile</a>
+                    <a class="dropdown-item" href="#" id="lgt">notifications</a>
+                  <a class="dropdown-item" href="#" id="lgt">Sign out account</a>
+                </div>
+        </div>
+    </div>
+    <ul>
+        <li><a class="active" href="#home" id="home" data-toggle="tooltip" title="Dashboard" data-placement="right"></a></li>
+        <li><a href="#news" id="news" data-toggle="tooltip" title="News feed" data-placement="right"></a></li>
+        <li><a href="#news" id="events" data-toggle="tooltip" title="Events" data-placement="right"></a></li>
+        <li><a href="#contact" id="chats" data-toggle="tooltip" title="Message" data-placement="right"></a></li>
+        <li><a href="#about" id="setting" data-toggle="tooltip" title="Account setting" data-placement="right"></a></li>
+        <li><a href="#about" id="info" data-toggle="tooltip" title="System information" data-placement="right"></a></li>
+      </ul>
+    <div style="margin-left:50px;padding:5px 16px; width:auto;">
+        <div class="p-5" id="dash_panel">
+            <h6>News feed</h6>
+            <div class="row">     
+                <button class="btn-post" data-toggle="modal" data-target="#myModal">Post something</button>  
+            </div>
+            <p>date:</p>
+            <hr>
+        </div>
+    </div>
+    <div class="container">
+
+            <!-- The Modal -->
+            <div class="modal trans_1" id="myModal">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content  my-card">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header bg-violet text-white">
+                    <h4 class="modal-title pt-1">Compose</h4>
+                    <div class="bulletx"></div>
+                    <div class="bulletxx"></div>
+                    <div class="bulletxx2"></div>
+                    <div class="bulletxxx"></div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <p class="lbl_">Reminder : please be careful on your posts.</p>
+                                        <form action="" method="">
+                                        <textarea id="txtpost" placeholder="what's on your mind?"></textarea>
+                                        <br>
+                                         <input type="submit" class="btn-view_p" value="post"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+</body>
+</html>

@@ -1,0 +1,715 @@
+body{
+    background-color: gainsboro;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    margin:  0;
+}
+ul {
+    list-style-type: none;
+    margin: 10px 0px;
+    padding: 0;
+    width: 60px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+}
+
+li a {
+    display: block;
+    color: #000;
+    height: 55px;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+}
+
+li a.active {
+    background-color:gainsboro;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: gainsboro;
+    color: white;
+}
+#home
+{
+    background-image: url('512/home1.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    transition: all .2s;
+}
+#home:hover
+{
+    background-image: url('512/home1.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px 10px;
+}
+#news
+{
+    background-image: url('512/book.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    transition: all .2s;
+}
+#news:hover
+{
+    background-image: url('512/book.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px 10px;
+}
+#events
+{
+    background-image: url('512/events.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    transition: all.2s;
+}
+#events:hover
+{
+    background-image: url('512/events.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px 10px;
+}
+#chats
+{
+    background-image: url('512/chats.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    transition: all .2s;
+}
+#chats:hover
+{
+    background-image: url('512/chats.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px 10px;
+}
+#setting
+{
+    background-image: url('512/gear.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    transition: all .2s;
+}
+#setting:hover
+{
+    background-image: url('512/gear.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 12px 10px;
+    transition: all .2s;
+}
+#info
+{
+    background-image: url('512/information.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 16px 12px;
+    transition: all .2s;
+}
+#info:hover
+{
+    background-image: url('512/information.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px 10px;
+}
+#dash_panel
+{
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+.my-color {
+    background-color: darkturquoise;
+ 
+    height: 70px;
+}
+#profile{
+    
+    position: absolute;
+    height: 70px;
+    right: 0%;
+    padding: 5px;
+    width: 250px;
+    background-color: rgb(159, 6, 173);
+}
+.my-font-2 {
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: white;
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .my-font {
+        display: none;
+    }
+    .my-font-2 {
+        display: block;
+    }
+}
+#acrnym{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: white;
+    padding: 6px 10px;
+    background-color: darkturquoise;
+    border: 3px double white;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#name{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    top: 15px;
+    left: 70px;
+}
+#mbtn{
+    outline: none;
+    border: none;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 7px;
+    background-color: rgb(139, 8, 151);
+    color: white;
+}
+#lgt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: darkturquoise;
+}
+#lgt:hover{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    color:white;
+    background-color: turquoise;
+}
+#drpm{
+    z-index: -1;
+    margin-top: -30px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgb(159, 6, 173);
+    padding-top: 20px;
+}
+.my-font{
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    color: white;
+}
+@keyframes fade {
+    from{top: 0;}
+    to{top: 100px;}
+}
+@keyframes fade_up {
+    from{top: 0;}
+    to{top: 100px;}
+}
+.trans_1{
+    animation:fade 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+.trans_2{
+    animation:fade_up 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+.bg-violet
+{
+    background-color: rgb(139, 8, 151);
+}
+.my-card
+{
+   border: 2px double rgb(139, 8, 151);
+   border-radius: 10px;
+   transition: all .2s;
+   margin-top: 6px;
+}
+.my-card:hover{
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.lbl_{
+    color: rgb(90,90,90);
+}
+.no_{
+    color: dodgerblue;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 45px;
+}
+.btn-post{
+    height: 45px;
+    width: 120px;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: rgb(139, 8, 151);
+    border-radius: 150px;
+    transition: all .2s;
+}
+.btn-post:hover{
+    height: 45px;
+    width: 120px;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: rgb(94, 8, 102);
+    border-radius: 150px;
+}
+.btn-view{
+    height: 10%;
+    width: 60px;
+    outline: none;
+    margin-right: 4px;
+    margin-top: 4px;
+    border: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: rgb(139, 8, 151);
+    border-radius: 150px;
+    transition: all .2s;
+}
+.btn-view-messaging{
+    height: 10%;
+    width: 150px;
+    outline: none;
+    margin-right: 4px;
+    margin-top: 4px;
+    border: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: rgb(139, 8, 151);
+    border-radius: 150px;
+    transition: all .2s;
+}
+.btn-view_p{
+    height: 15%;
+    width: 60px;
+    float: right;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: rgb(139, 8, 151);
+    border-radius: 150px;
+    transition: all .2s;
+}
+.btn-view:hover{
+    height: 10%;
+    width: 60px;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: rgb(139, 8, 151);
+    border-radius: 150px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.bullet
+{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+}
+.bullet_2{
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+}
+.bullet_3{
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    background-color: orangered;
+    position: absolute;
+    border-radius: 50%;
+}
+.bullet_4{
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    background-color: springgreen;
+    position: absolute;
+    border-radius: 50%;
+}
+.bullet_5{
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    background-color: skyblue;
+    position: absolute;
+    border-radius: 50%;
+}
+.bulletx{
+    height: 16px;
+    width:16px;
+    top: 2px;
+    left: 6px;
+    background-color: lime;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.bulletxx{
+    height: 16px;
+    width:16px;
+    top: 2px;
+    left: 26px;
+    background-color:red;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.bulletxx2{
+    height: 16px;
+    width:16px;
+    top: 2px;
+    left: 46px;
+    background-color:yellow;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.bulletxxx{
+    height: 30px;
+    width: 30px;
+    top: 12px;
+    right: 8px;
+    background-color:white;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.msg-box {
+    background: white;
+    color: rgb(90,90,90);
+    padding: 15px;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+    border: none;
+}
+.tmi {
+    height: 25px;
+    border-radius: 50px;
+    background-color: seagreen;
+    outline: none;
+    border:none;
+    color:white;
+    width: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(139, 8, 151);
+    border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(139, 8, 151); 
+}
+#txtpost{
+border: none;
+background-color: gainsboro;
+width: 100%;
+outline: none;
+height: 70px;
+color: rgb(90,90,90);
+font-size: 16px;
+border-radius: 25px;
+padding-top: 5px;
+padding-left: 23px;
+}
+.cmt {
+    
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gainsboro;
+    width: 190px;
+    outline: none;
+    height: 30px;
+    color: rgb(90,90,90);
+    font-size: 12px;
+    border-top-left-radius: 25px;
+    padding-top: 2px;
+    padding-left: 12px;
+}
+.btn-cmt {
+    
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: dodgerblue;
+    width: 50px;
+    margin-left: -5px;
+    outline: none;
+    height: 30px;
+    color: white;
+    border-top-right-radius: 25px;
+    font-size: 12px;
+}
+.rt {
+   
+    background-color: seagreen;
+    color: white;
+    max-width: 200px;
+    
+}
+#txtmessage{
+    border: none;
+    background-color: gainsboro;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    color: rgb(90,90,90);
+    font-size: 16px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 50px;
+    padding-top: 5px;
+    padding-left: 23px;
+    }
+#avatar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 92px;
+    border: none;
+    background: linear-gradient(to top left, #00cc99 0%, #00ff00 100%);
+    border-radius: 50%;
+    padding: 21px 25px;
+    height: 160px;
+    width: 160px;
+    color: white;
+    margin-bottom: 20px;;
+}
+#avatar_sm{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    border: none;
+    background: linear-gradient(to top left, #00cc99 0%, #00ff00 100%);
+    border-radius: 50%;
+    padding: 2px 7px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#avatar_sm2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 72px;
+    border: none;
+    background: linear-gradient(to top left, #00ff00 0%, #009933 100%);
+    border-radius: 50%;
+    padding: 12px 20px;
+    height: 130px;
+    width: 130px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    transition: all .5s;
+}
+.pro_d {
+    transition: all .5s;
+}
+.pro_d:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 3px 6px rgb(44, 43, 43);
+}
+#avatar_sm2:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 72px;
+    border: none;
+    background: linear-gradient(to top left, #00ff00 100%, #009933 10%);
+    border-radius: 50%;
+    padding: 12px 35px;
+    height: 130px;
+    width: 130px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#btn_set {
+    cursor: pointer;
+}
+.my-control {
+    outline: none;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 12px;
+    font-size: 12px;
+    height: 30px;
+    width: 250px;
+    background-color: #ccc;
+    color: rgb(90,90,90);
+    border-radius: 120px;
+}
+@keyframes unfoldIn {
+    0% {
+      transform:scaleY(.005) scaleX(0);
+    }
+    50% {
+      transform:scaleY(.005) scaleX(1);
+    }
+    100% {
+      transform:scaleY(1) scaleX(1);
+    }
+  }
+  
+  @keyframes unfoldOut {
+    0% {
+      transform:scaleY(1) scaleX(1);
+    }
+    50% {
+      transform:scaleY(.005) scaleX(1);
+    }
+    100% {
+      transform:scaleY(.005) scaleX(0);
+    }
+  }
+  
+.my-div-error{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    z-index: 1;
+}
+.mdl-container{
+    animation:unfoldIn 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    border-radius: 6px;
+    background: linear-gradient(to bottom left, #cc0066 0%, #990099 100%);
+    height: 230px;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 220px;
+    z-index: 2;
+    border: 2px solid white;
+}
+.mdl-container-out{
+    animation:unfoldOut 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    border-radius: 6px;
+    background: linear-gradient(to bottom left, #cc0066 0%, #990099 100%);
+    height: 230px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 220px;
+    z-index: 0;
+    border: 2px solid white;
+    
+}
+.err_{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: white;
+}
+.cls-btn{
+    color: white;
+    position: absolute;
+    top: 4px;
+    cursor: pointer;
+    right: 12px;
+    font-size: 22px;
+}
+.circle_{
+    position: absolute;
+    z-index: 1;
+    background-image: url('512/alert.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 19px 15px;;
+    background-color: white;
+    top: 50px;
+    left: -6%;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.msg-p{
+    z-index: 1;
+    margin-left: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    color: rgb(90,90,90);
+}
+#txtsearch {
+    outline: none;
+    height: 30px;
+    width: 150px;
+    border:0;
+    background-color: gainsboro;
+    border-top-left-radius: 20px;
+    padding-left: 12px;
+    transition:  all .5s;
+    margin: 0px;
+}
+#txtsearch:focus {
+    outline: none;
+    height: 30px;
+    width: 200px;
+    border:0;
+    background-color: gainsboro;
+    padding-left: 12px;
+    transition:  all .5s;
+}
+#btn_go
+{
+    margin-left: -3px;
+    outline: none;
+    height: 30px;
+    width: 40px;
+    color: white;
+    border:0;
+    background-color: dodgerblue;
+
+    transition:  all .5s;
+}
